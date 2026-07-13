@@ -43,7 +43,7 @@ elseif whoreboss[you]=npc and you=mother:
 		'Сутенёр протянул вам сбрую с поводком. Что же, видимо, выбора у вас опять особо нет, как и всегда.' &*nl'- И шмотьё своё блядское скидывай.'
 	end
 	act '«Скинуть блядское шмотьё» и надеть сбрую':
-		cls&'<center><video src="pic/event/bocmanpimp1.webm" ></center>'
+		cls&'<center><video autoplay loop src="pic/event/bocmanpimp1.webm" ></center>'
 		 letherslut[you]=1&horny[npc]=50&pose[you]=2&$loc[you]='<<X[you]>>,<<Y[you]>>,<<Z[you]>>,<<H[you]>>,<<R[you]>>'
 		 if t_slot[you]>0:
 			 clo=t_slot[you]&if ban_h[you]=0:t_slot[you]=0&item_loc_t['<<clo>>,<<$loc[you]>>']+=1
@@ -80,7 +80,7 @@ elseif whoreboss[you]=npc and you=mother:
 			'- А теперь пойдём на прогулку, сученька, - усмехнулся он, потянув за поводок.'
 		end
 		act 'Идти на прогулку':
-			 time+=10&cls&'<center><video src="pic/event/bocmanpimp2.jpg" ></center>'&'<center><img src="<<$d_view>>" ></center>'
+			 time+=10&cls&'<center><img src="pic/event/bocmanpimp2.jpg" ></center>'&'<center><img src="<<$d_view>>" ></center>'
 			if bocmanpimpwalk = 0: 
 				'Люди на улице тут же обратили внимание на голую девушку, которую ведёт на поводке местный криминальный авторитет.' 
 				'Кто-то фотографировал, кто-то отпускал грязные комментарии:' 

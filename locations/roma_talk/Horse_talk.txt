@@ -62,12 +62,12 @@ IF talk = 2:
 					if CONFIG['ENABLE_sound']=1:play "<<$contentS>>/Rome//horsefuck2.mp3",Громкость_эффектов
 					DELACT "Продолжить"
 					ACT "Наблюдать":
-						close all&CLA&*CLR&"<TABLE><TR><TD><video src = 'content/Horse/fuck1.webm'></TD><TD>"
+						close all&CLA&*CLR&"<TABLE><TR><TD><video autoplay loop src = 'content/Horse/fuck1.webm'></TD><TD>"
 						"Жеребец стал водить членом взад-вперёд, а Хозяйка, встав рядом, внимательно наблюдала за процессом."
 						if CONFIG['ENABLE_sound']=1:play "<<$contentS>>/Rome//horsefuck3.mp3",Громкость_эффектов
 						DELACT "Наблюдать"
 						ACT "Кончить":
-							close all&CLA&*CLR&"<TABLE><TR><TD><video src = 'content/Horse/fuck2.webm'></TD><TD>"
+							close all&CLA&*CLR&"<TABLE><TR><TD><video autoplay loop src = 'content/Horse/fuck2.webm'></TD><TD>"
 							"Когда кульминация была уже совсем близко, Хозяйка не выдержав, обхватила руками конский член, стимулируя жеребца ещё сильнее. Вскоре он кончил, полностью затопив еле живую, но ещё дёргающуюся дикарку."
 							if CONFIG['ENABLE_sound']=1:play "<<$contentS>>/Rome//horsefuck4.mp3",Громкость_эффектов
 							DELACT "Кончить"

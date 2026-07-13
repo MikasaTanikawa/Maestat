@@ -55,13 +55,13 @@ if hour>=8 and hour<=20:
 		if energy[you]>=50:
 			act'Силовые упражнения 5 искр':
 				energy[you]-=50&sportiv[you]+=5&mus[you]+=50&iskr[you]-=5&time+=60&cls&gs'stat'&'Под руководством опытного тренера вы упражняетесь с железом.'&act'...':gt $curloc
-				if pol[you]>0:'<center><video src="pic/misc/squat.webm" ></center>'
+				if pol[you]>0:'<center><video autoplay loop src="pic/misc/squat.webm" ></center>'
 			end
 		end
 		if energy[you]>=50:
 			act'Кардиотренировка 5 искр':
 				if fat[you]>100:fat[you]-=100
-				energy[you]-=50&sportiv[you]+=5&iskr[you]-=5&time+=60&cls&gs'stat'&'Опытный тренер гоняет вас по беговой дорожке'&!if pol[you]>0:'<center><video src="pic/misc/situps.webm" ></center>'
+				energy[you]-=50&sportiv[you]+=5&iskr[you]-=5&time+=60&cls&gs'stat'&'Опытный тренер гоняет вас по беговой дорожке'&!if pol[you]>0:'<center><video autoplay loop src="pic/misc/situps.webm" ></center>'
 				act'...':gt $curloc
 			end
 		end

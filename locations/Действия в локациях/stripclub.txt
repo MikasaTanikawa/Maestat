@@ -18,7 +18,7 @@ if work[you]=25:
 				if sexiness[you]>=50 and sexiness[you]<200:
 					 kreatstreep=rand(10,sexiness[you])&chai=total_npc_on_loc*kreatstreep&chai+=dance[you]&money[you]+=chai&total_strip_earn[you]+=chai&if chai=0:chai=1
 				end
-				gs'stat'&'<center><video src="pic/misc/strip<<rand(0,7)>>.webm" ></video></center>'&'Вы танцуете стриптиз возле шеста'
+				gs'stat'&'<center><video autoplay loop src="pic/misc/strip<<rand(0,7)>>.webm" ></video></center>'&'Вы танцуете стриптиз возле шеста'
 				if sexiness[you]>=50 and sexiness[you]<200:
 					 if chai>=100:'Клиенты платят вам приблизительно <<chai/100>> шиллингов чаевых'
 					 if chai<100:'Клиенты презрительно швыряют вам <<chai>> пенсов чаевых'

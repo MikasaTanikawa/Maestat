@@ -10,11 +10,11 @@ gs'stat'&'<center><img src="pic/misc/whospital.jpg" ></center>'&nopee=0
 'И так монотонно до 17 часов. В конце дня вам дают <<payment/100>> шиллингов <<payment mod 100>> пенсов'
 if horny[you]>70 and ul_slot[you]>0 and vag[you]>0:
 	act'Пошалить':
-		cls&gs'stat'&'<center><video src="pic/event/nopantyoffice.webm" ></video></center>'
+		cls&gs'stat'&'<center><video autoplay loop src="pic/event/nopantyoffice.webm" ></video></center>'
 		 'Вы поднялись со своего кресла и, оглядевшись, чтобы вас никто не заметил, сятянули свои трусики и убрали их в ящик стола.'
 		 '- Ну, я же ничего плохого никому не делаю, - прошептали вы, чувствуя прилив возбуждения.'&uls=ul_slot[you]&item_loc_ul['<<uls>>,<<$loc[you]>>']+=1&ul_slot[you]=0
 		 act'Мастурбировать':
-			jerk[you]+=1&horny[you]=0&energy[you]+=5&time+=5&cls&gs'stat'&'<center><video src="pic/sex/solo/shlik3.webm" ></video></center>'
+			jerk[you]+=1&horny[you]=0&energy[you]+=5&time+=5&cls&gs'stat'&'<center><video autoplay loop src="pic/sex/solo/shlik3.webm" ></video></center>'
 			'Опустив руку на свою киску, вы стали натирать горячую кнопочку клитора, пока не забились в оргазме... Ощущения были осбенно приятными, из-за мысли, что вас могли заметить за этим делом...'
 			act'Отойти':gt 'preloc'
 		 end
@@ -60,7 +60,7 @@ if BogartMedQW=15 and dead[borisbogart]=0 and dead[sister]=0 and dead[frank_visc
 					 sexpartner['<<npc>>,<<you>>']+=1&sexpartner['<<you>>,<<npc>>']+=1&anal_mass['<<you>>,<<npc>>']+=1&aanal[you]+=1&anal[npc]+=1
 					 $global_npc_log[npc]+='<br>'&$global_npc_log[npc]+='<<day>> <<$month>> <<year>>года, <<$week>>. <<$name[you]>> <<$surname[you]>> отстрапонила меня.'
 					 $global_npc_log[you]+='<br>'&$global_npc_log[you]+='<<day>> <<$month>> <<year>>года, <<$week>>. Я отстрапонила Богарта.'
-					 gs'stat'&'<center><video src="pic/sex/femdom/peg0.webm" ></video></center>'&'Надев страпон вы поставили Богарта раком и смазали его анус вазелином.'
+					 gs'stat'&'<center><video autoplay loop src="pic/sex/femdom/peg0.webm" ></video></center>'&'Надев страпон вы поставили Богарта раком и смазали его анус вазелином.'
 					'Затем вы грубо вошли в него, начав трахать его задницу огромным страпоном, через некоторое время, заскулив как сучка, Богарт испустил тонкую струйку спермы'
 					 act'Закончить':
 						 money[you]+=50000&cls&gs'stat'&'<center><img src="pic/face/5/46.jpg" ></center>'&'Вы позвали доктора и Богарт вместе с ним ушли в кабинет, где какое то время разговаривали о чем то. '
@@ -82,11 +82,11 @@ if BogartMedQW=14 and dead[borisbogart]=0 and dead[sister]=0 and dead[frank_visc
 			 sexpartner['<<npc>>,<<you>>']+=1&sexpartner['<<you>>,<<npc>>']+=1&bj_mass['<<npc>>,<<you>>']+=1&bj[you]+=1&abj[npc]+=1
 			 $global_npc_log[npc]+='<br>'&$global_npc_log[npc]+='<<day>> <<$month>> <<year>>года, <<$week>>. <<$name[you]>> <<$surname[you]>> отсосала массируя мою простату.'
 			 $global_npc_log[you]+='<br>'&$global_npc_log[you]+='<<day>> <<$month>> <<year>>года, <<$week>>. Я отсосала Богарту массируя его простату.'
-			 gs'stat'&'<center><video src="pic/sex/femdom/blow_finger.webm" ></video></center>'
+			 gs'stat'&'<center><video autoplay loop src="pic/sex/femdom/blow_finger.webm" ></video></center>'
 			 'Вы взяли в рот член Богарта и начали ласкать его птенчика, при этом вы погладили анус Богарта и не встретив сопротивления засунули ему в зад пальцы и стали массировать простату.'
 		     if item[31]>0:
 				 act'Дилдо в зад Богарту':
-					 BogartMedQW=15&money[you]+=50000&cls&gs'stat'&'<center><video src="pic/sex/femdom/blow_dildo.webm" ></video></center>'
+					 BogartMedQW=15&money[you]+=50000&cls&gs'stat'&'<center><video autoplay loop src="pic/sex/femdom/blow_dildo.webm" ></video></center>'
 					'Вы достали дилдо и плюнув на него для смазки уперли его в очко Богарта, на удивление не встретив сопротивления от великого и ужасного волшебника. '
 					'Вы запихали ему в зад дилдак и начали трахать Богарта при этом отсасывая его член'
 					 act'Закончить':
@@ -130,7 +130,7 @@ if BogartMedQW=13 and dead[borisbogart]=0 and dead[sister]=0 and dead[frank_visc
 								 $global_npc_log[npc]+='<<day>> <<$month>> <<year>>года, <<$week>>. <<$name[you]>> <<$surname[you]>> подрочила дилдаком передо мной, а потом отсосала массируя мою простату.'
 								 $global_npc_log[you]+='<br>'
 								 $global_npc_log[you]+='<<day>> <<$month>> <<year>>года, <<$week>>. Я подрочила перед Богартом, а потом отсосала у него массируя его простату.'
-								 gs'stat'&'<center><video src="pic/sex/femdom/blow_finger.webm" ></video></center>'
+								 gs'stat'&'<center><video autoplay loop src="pic/sex/femdom/blow_finger.webm" ></video></center>'
 								'Вы взяли в рот член Богарта и начали ласкать его птенчика, при этом вы погладили анус Богарта и не встретив сопротивления засунули ему в зад пальцы и стали массировать простату.'
 								'Богарт долго не продержался и кончил вам в рот капелькой спермы которую вы легко проглотили.'
 								 act'Позвать доктора':
@@ -395,7 +395,7 @@ if BogartMedQW=5 and dead[borisbogart]=0 and dead[sister]=0 and dead[frank_visco
 			'Но Борис в безопасности, пока никто не знает где находится маяк связывающий его с тенью. Но хватит о делах. Развлеки меня, сучка. Наклонись, я тебя отшлепаю.'
 		 	act'Наклониться':
 				 npc=frank_visconti&corr[you]+=5&X[npc]=2&Y[npc]=3&Z[npc]=3&H[npc]=1&R[npc]=2&X[you]=X[npc]&Y[you]=Y[npc]&Z[you]=Z[npc]&H[you]=H[npc]&R[you]=R[npc]
-				 BogartMedQW=6&cls&gs'stat'&'<center><video src="pic/misc/spank.webm" ></video></center>'&'Вы наклонились и <<$name[npc]>> сильно шлепает вам по попе - Класная у тебя жопа.'
+				 BogartMedQW=6&cls&gs'stat'&'<center><video autoplay loop src="pic/misc/spank.webm" ></video></center>'&'Вы наклонились и <<$name[npc]>> сильно шлепает вам по попе - Класная у тебя жопа.'
 				 act'Ласкаться':gs'drop_follower'&last_sex_day[npc]=daystart&last_sex[npc]=time+(60*5)&friends[npc]+=1&solo=npc&horny[npc]=50&pose[you]=2&gt'sex'
 			 end
 		 end
@@ -413,7 +413,7 @@ if BogartMedQW=4 and dead[borisbogart]=0 and dead[sister]=0 and dead[frank_visco
 			'Уж кому кому, как не мне это знать. Я его с детства знаю. Наклонись шлюха, хочу рассмотреть твою задницу.'
 			 act'Наклониться':
 				 npc=frank_visconti&corr[you]+=5&X[npc]=2&Y[npc]=3&Z[npc]=3&H[npc]=1&R[npc]=2&X[you]=X[npc]&Y[you]=Y[npc]&Z[you]=Z[npc]&H[you]=H[npc]&R[you]=R[npc]
-				 BogartMedQW=5&cls&gs'stat'&'<center><video src="pic/misc/spank.webm" ></video></center>'
+				 BogartMedQW=5&cls&gs'stat'&'<center><video autoplay loop src="pic/misc/spank.webm" ></video></center>'
 				 'Вы наклонились и <<$name[npc]>> сильно шлепает вам по попе - Ух сучка. Я хоть и люблю молоденьких спортивных девочек, но ты тоже ничего телка. Пердастая, в самом соку. Тебя ебать и ебать.'
 				 act'Ласкаться':gs'drop_follower'&last_sex_day[npc]=daystart&last_sex[npc]=time+(60*5)&friends[npc]+=1&solo=npc&horny[npc]=50&pose[you]=2&gt'sex'
 			 end
@@ -556,7 +556,7 @@ if BogartMedQW=1 and dead[borisbogart]=0 and dead[sister]=0:
 		 if dick[w]>throat[s]:throat[s]+=1
 		 $global_npc_log[w]+='<br>'&$global_npc_log[w]+='<<day>> <<$month>> <<year>>года, <<$week>>. <<$name[s]>> <<$surname[s]>> сосала мой хуй'
 		 $global_npc_log[s]+='<br>'&$global_npc_log[s]+='<<day>> <<$month>> <<year>>года, <<$week>>. <<$name[w]>> <<$surname[w]>> дал мне в рот'
-		 gs'stat'&'<center><video src="pic/misc/slap0.webm" ></video></center>'&'Вы поздоровались с Богартом и ответили что у вас дела превосходные. Борис подошел ближе и шлепнул вам по попке '
+		 gs'stat'&'<center><video autoplay loop src="pic/misc/slap0.webm" ></video></center>'&'Вы поздоровались с Богартом и ответили что у вас дела превосходные. Борис подошел ближе и шлепнул вам по попке '
 		'- Отлично, детка. Хмм, как у тебя фамилия? <<$surname[you]>>? Точно, в школе учатся двое детей, мальчик и девочка, твои?'&*nl'Вы кивнули головой подтверждая.'
 		 'Богарт посмотрел вам в лицо своим непроницаемым взглядом - У тебя с дочерью губы очень похожи. Ну да ладно, я сюда не за этим пришел, поговорить с доктором'
 		 act'Позвать доктора':

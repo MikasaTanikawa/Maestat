@@ -28,7 +28,7 @@ if X=3 and Y=3:
 	telephone['<<$temploc>>']=1
 	R=1&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&$locnameR['<<$temploc>>']='Кухня'
 	$locname['<<$temploc>>']='Кухня'&$lname['<<$temploc>>']='кухня'&$lname_go['<<$temploc>>']='на кухню'
-	$locopis['<<$temploc>>']='Небольшая кухонька с раковиной, холодильником, плитой и маленьким столиком. На плите стоит кастрюля пельменей'
+	$locopis['<<$temploc>>']='Небольшая кухонька с раковиной, холодильником, плитой и маленьким столиком. На плите стоит кастрюля'
 	np['<<$temploc>>']=154
 	can_drink['<<$temploc>>']=1&kitchen['<<$temploc>>']=1&can_eat['<<$temploc>>']=1
 	R=2&gs 'toilet_gen',1&!gs 'toilet_gen',уровень туалета
@@ -93,8 +93,8 @@ if X=3 and Y=3:
 elseif X=3 and Y=4:
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Сквер'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&blocksex['<<$temploc>>']=1
-     $locname['<<$temploc>>']='Сквер'&$lname['<<$temploc>>']='Сквер'&$locopis['<<$temploc>>']='Ухоженный сквер с лавочками, подстриженными кустиками и мощеными дорожками'
-	 np['<<$temploc>>']=11
+    $locname['<<$temploc>>']='Сквер'&$lname['<<$temploc>>']='Сквер'&$locopis['<<$temploc>>']='Ухоженный сквер с лавочками, подстриженными кустиками и мощеными дорожками'
+	np['<<$temploc>>']=11
 elseif X=3 and Y=2:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=1
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Отделение полиции'&blocksex['<<$templocH>>']=1&maxPositionR['<<$templocH>>']=0
@@ -183,13 +183,13 @@ elseif X=4 and Y=1:
 elseif X=5 and Y!3 and Y>0 and Y<=Ymax[Z]:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=0&H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Речка Срачка'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Речка'&$lname['<<$temploc>>']='речка'&$locopis['<<$temploc>>']='Маленькая вонючая речка с замусоренными берегами'
-	 np['<<$temploc>>']=22
+    $locname['<<$temploc>>']='Речка'&$lname['<<$temploc>>']='речка'&$locopis['<<$temploc>>']='Маленькая вонючая речка с замусоренными берегами'
+	np['<<$temploc>>']=22
 elseif X=5 and Y=3:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=0&H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Мост'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Мост'&$lname['<<$temploc>>']='мост'&$locopis['<<$temploc>>']='мост через речку'
-	 np['<<$temploc>>']=22
+    $locname['<<$temploc>>']='Мост'&$lname['<<$temploc>>']='мост'&$locopis['<<$temploc>>']='мост через речку'
+	np['<<$temploc>>']=22
 elseif X=2 and Y=4:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=2
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Площадка перед поликлиникой'&maxPositionR['<<$templocH>>']=0
@@ -233,9 +233,9 @@ elseif X=2 and Y=3:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=5
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Площадь у входа в универсальный магазин'&maxPositionR['<<$templocH>>']=0&blocksexH['<<$templocH>>']=1
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&blocksex['<<$temploc>>']=1
-     $locname['<<$temploc>>']='Площадь перед магазином'&$lname['<<$temploc>>']='Магазин'&$lname_go['<<$temploc>>']='в магазин'
-	 $locopis['<<$temploc>>']='Небольшая, но ухоженная площадка перед магазином'
-	 np['<<$temploc>>']=19
+    $locname['<<$temploc>>']='Площадь перед магазином'&$lname['<<$temploc>>']='Магазин'&$lname_go['<<$temploc>>']='в магазин'
+	$locopis['<<$temploc>>']='Небольшая, но ухоженная площадка перед магазином'
+	np['<<$temploc>>']=19
 	gs'gopnik_gen'&real_world[]=i&gs'gopnik_gen'&real_world[]=i&gs'gopnik_gen'&real_world[]=i
 	H=1&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Универсам'&maxPositionR['<<$templocH>>']=1
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&blocksex['<<$temploc>>']=1
@@ -243,18 +243,18 @@ elseif X=2 and Y=3:
 	np['<<$temploc>>']=20
 	supermarket['<<$temploc>>']=1&clostore['<<$temploc>>']=1
 	R=1&gs 'toilet_gen',0&!gs 'toilet_gen',уровень туалета
-	 H=1&gs'homegen',5
+	H=1&gs'homegen',5
 elseif X=2 and Y=2:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=1
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Котельная'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Котельная'&$lname['<<$temploc>>']='Котельная'
-	 $locopis['<<$temploc>>']='Местная котельная подающая горячую воду в дома'
-	 np['<<$temploc>>']=27
+    $locname['<<$temploc>>']='Котельная'&$lname['<<$temploc>>']='Котельная'
+	$locopis['<<$temploc>>']='Местная котельная подающая горячую воду в дома'
+	np['<<$temploc>>']=27
 	H=1&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Помещение котельной'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Качегарка'&$lname['<<$temploc>>']='качегарка'&$lname_go['<<$temploc>>']='в качегарку'
-	 $locopis['<<$temploc>>']='Местная котельная подающая горячую воду в дома'
+    $locname['<<$temploc>>']='Качегарка'&$lname['<<$temploc>>']='качегарка'&$lname_go['<<$temploc>>']='в качегарку'
+	$locopis['<<$temploc>>']='Местная котельная подающая горячую воду в дома'
 elseif X=2 and Y=1:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=1
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Городской рынок'&maxPositionR['<<$templocH>>']=0
@@ -287,11 +287,11 @@ elseif X=1 and Y=3:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=5
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Улица Борщевского'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&blocksex['<<$temploc>>']=1
-     $locname['<<$temploc>>']='Улица'&$lname['<<$temploc>>']='улица'&$lname_go['<<$temploc>>']='на улицу Борщевского'
-	 $locopis['<<$temploc>>']='Бетонные дома конца восмидесятых дворы которых не благоустроены и представляют собой пыльные пустыри'
-	 $locopis['<<$temploc>>']+='Дворы многоэтажек похожи на дно колодца и лишь где-то в вышине виден рваный клочок грязного неба.'
-	 np['<<$temploc>>']=10
-	 gs'realworldhuman_gen'&gs'realworldhuman_gen'&gs'realworldhuman_gen'
+    $locname['<<$temploc>>']='Улица'&$lname['<<$temploc>>']='улица'&$lname_go['<<$temploc>>']='на улицу Борщевского'
+	$locopis['<<$temploc>>']='Бетонные дома конца восмидесятых дворы которых не благоустроены и представляют собой пыльные пустыри'
+	$locopis['<<$temploc>>']+='Дворы многоэтажек похожи на дно колодца и лишь где-то в вышине виден рваный клочок грязного неба.'
+	np['<<$temploc>>']=10
+	gs'realworldhuman_gen'&gs'realworldhuman_gen'&gs'realworldhuman_gen'
 	H=1&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Аллея'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'&$locname['<<$temploc>>']='Аллея'
 	gs'homegen',5&!gs'miha_gen'&gs'mark_gen'&gs'kirill_gen'&gs'katja_gen'
@@ -350,9 +350,9 @@ elseif X=0 and Y>1 and Y<Ymax[Z]-1:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=0
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Гаражи'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Гаражный массив'&$lname['<<$temploc>>']='Гаражи'
-	 $locopis['<<$temploc>>']='Лабиринт однотипных приземистых кирпичных гаражей'
-	 np['<<$temploc>>']=24
+    $locname['<<$temploc>>']='Гаражный массив'&$lname['<<$temploc>>']='Гаражи'
+	$locopis['<<$temploc>>']='Лабиринт однотипных приземистых кирпичных гаражей'
+	np['<<$temploc>>']=24
 elseif X=0 and Y=1:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=1
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Ресторан'&maxPositionR['<<$templocH>>']=0
@@ -370,10 +370,10 @@ elseif Y=0 and X>=0 and X<=Xmax[Z]:
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=0
 	H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Река'&maxPositionR['<<$templocH>>']=0
 	R=0&$temploc='<<X>>,<<Y>>,<<Z>>,<<H>>,<<R>>'
-     $locname['<<$temploc>>']='Берег реки'&$lname['<<$temploc>>']='Берег реки'
-	 $locopis['<<$temploc>>']='Пустынный берег реки'
-	 np['<<$temploc>>']=28
-	 can_swim['<<$temploc>>']=1
+    $locname['<<$temploc>>']='Берег реки'&$lname['<<$temploc>>']='Берег реки'
+	$locopis['<<$temploc>>']='Пустынный берег реки'
+	np['<<$temploc>>']=28
+	can_swim['<<$temploc>>']=1
 else
 	maxPositionH['<<X>>,<<Y>>,<<Z>>']=5
 	!H=0&$templocH='<<X>>,<<Y>>,<<Z>>,<<H>>'&$locnameH['<<$templocH>>']='Улица'&maxPositionR['<<$templocH>>']=0

@@ -34,6 +34,6 @@ else
 	lesb[you]+=1
      act'Заставить отлизать':
 		 lesb[you]+=1&horny[you]=0&health[you]+=50&energy[you]+=100&if manamax[you]>0:mana[you]+=soul[you]
-		 cls&gs'stat'&'<center><video src="pic/sex/rape/cunt.webm" ></video></center>'&'Вы сели на лицо и заставили ее отлизать у вас, вскоре вы кончили.'&act'Уйти':gt 'preloc'
+		 cls&gs'stat'&'<center><video autoplay loop src="pic/sex/rape/cunt.webm" ></video></center>'&'Вы сели на лицо и заставили ее отлизать у вас, вскоре вы кончили.'&act'Уйти':gt 'preloc'
 	 end
 end

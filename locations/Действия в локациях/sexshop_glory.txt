@@ -31,7 +31,7 @@ end
 if money[you]>=100:
 	 act'Заплатить шиллинг и смотреть порно':
 		 money[you]-=100&horny[you]=100
-		 cls&gs'stat'&'<center><video src="pic/sex/group/dp/dpb<<rand(0,20)>>.webm" ></video></center>'&'Вы смотрите порнуху по телевизору и это вас возбуждает.'&act'Встать':gt 'preloc'
+		 cls&gs'stat'&'<center><video autoplay loop src="pic/sex/group/dp/dpb<<rand(0,20)>>.webm" ></video></center>'&'Вы смотрите порнуху по телевизору и это вас возбуждает.'&act'Встать':gt 'preloc'
 	 end
 end
 if rand(1,10)>=7 and dick[you]>3 and vag[you]<=0 and ball[you]>2 and horny[you]>=50 and pose[you]=1:
