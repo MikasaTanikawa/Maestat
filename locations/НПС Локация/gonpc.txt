@@ -1,0 +1,24 @@
+﻿npc=ARGS[0]&if tornton_lose_slave=1 and npc=tornton:tornton_lose_slave=2&gt'tornton_talk'
+if scear['<<npc>>,<<you>>']<=0 and wantbeat['<<npc>>,<<you>>']<=0:	
+	trytokillyou=0&npcmax=arrsize('$name')&nfr=1
+	:marknpcfriendloc
+	if nfr < npcmax:
+		if dead[nfr]!0 or nfr=you or nfr=npc: jump 'next_npc'
+		if isenemy['<<nfr>>,<<you>>'] <= 0: jump 'next_npc'
+		if husband[npc]=nfr:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {husband}'&jump 'break'
+		if father[npc]=nfr:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {father}'&jump 'break'
+		if mother[npc]=nfr:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {mother}'&jump 'break'
+		if father[nfr]=npc:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {child}'&jump 'break'
+		if mother[nfr]=npc:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {child}'&jump 'break'
+		if mother[npc]!0 and mother[npc]=mother[nfr] and father[npc]!0 and father[npc]=father[nfr]:
+			trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {brother}'&jump 'break'
+		end
+		if friends['<<npc>>,<<nfr>>']>=100:trytokillyou=nfr&wantbeat['<<npc>>,<<you>>']=npc&$wantbeat_desc['<<npc>>,<<you>>'] = '<<nfr>>, {bestfriend}'&jump 'break'
+		:next_npc
+		nfr+=1 &jump 'marknpcfriendloc'
+    end	
+    :break
+end
+if immobilaze[npc]>0:gt'immobilaze'
+if madness[npc]>0:gs'progcurse'&gt 'prefight'
+gt $iif(mother[npc]=you or father[npc]=you,$iif(age[npc]<18,'kid_talk','npc'),'npc')
