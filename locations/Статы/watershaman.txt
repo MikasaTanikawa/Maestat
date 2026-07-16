@@ -1,1 +1,0 @@
-﻿mana[you]-=500&itsrainingday['<<$loc[you]>>']=time+120&gt'preloc'

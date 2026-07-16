@@ -1,1 +1,0 @@
-﻿cla&*clr&time+=15&fat[args[0]]+=1&alko[args[0]]+=2&horny[args[0]]+=15&hunger[args[0]]+=3&mana[args[0]]+=10&wipo[args[0]]+=10

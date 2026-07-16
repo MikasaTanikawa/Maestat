@@ -1,2 +1,0 @@
-﻿Ltipe=ARGS[0]
-gt'los'
